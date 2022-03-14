@@ -17,7 +17,7 @@ func main() {
 		return
 	}
 	defer consumer.Close()
-	partitionConsumer, err := consumer.ConsumePartition("kafka_go_test", 0, sarama.OffsetOldest)
+	partitionConsumer, err := consumer.ConsumePartition("fuck", 0, sarama.OffsetOldest)
 	if err != nil {
 		fmt.Printf("try create partition_consumer error %s\n", err.Error())
 		return
